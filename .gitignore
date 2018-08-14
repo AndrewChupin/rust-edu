@@ -1,0 +1,6 @@
+/target
+**/*.rs.bk
+
+\.idea/
+
+rust-edu\.iml
