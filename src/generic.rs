@@ -12,10 +12,24 @@ fn sample() {
         None =>  println!("None"),
     }
 
-    if let val = x {
+    if let Some(val) = x {
         println!("Some {}", val)
     } else {
         println!("None")
+    }
+
+
+    // this
+    loop {
+        match x {
+            Some(val) => println!("{}", val),
+            _ => break,
+        }
+    }
+    // equal to
+    // this
+    while let Some(val) = x {
+        println!("{}", val);
     }
 }
 
