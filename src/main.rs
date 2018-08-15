@@ -1,7 +1,33 @@
 
-use std::option;
+use std::fmt;
+
+trait Graph {
+    type N: fmt::Display;
+    type E;
+
+    fn has_edge(&self, _: &Self::N, _: &Self::N) -> bool;
+    fn edges(&self, _: &Self::N) -> Vec<Self::E>;
+}
+
+struct Node;
+
+struct Edge;
+
+struct MyGraph;
+
+impl Graph for MyGraph {
+    type N = Node;
+    type E = Edge;
+
+    fn has_edge(&self, n1: &Node, n2: &Node) -> bool {
+        true
+    }
+
+    fn edges(&self, n: &Node) -> Vec<Edge> {
+        Vec::new()
+    }
+}
 
 fn main() {
-    let x: Option<i32> = Some(5);
 
 }
