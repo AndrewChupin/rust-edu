@@ -39,8 +39,6 @@ fn some<T: HasArea + Debug>(t: T) {
     // TODO
 }
 
-
-
 // Convert
 trait ConvertTo<Output> {
     fn convert(&self) -> Output;

@@ -57,9 +57,6 @@ fn ref_closure() {
     assert_eq!(3, answer);
 }
 
-
-
-
 fn return_fn() {
     fn factory() -> Box<Fn(i32) -> i32> {
         let num = 5;

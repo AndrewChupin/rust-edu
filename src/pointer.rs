@@ -1,7 +1,3 @@
-
-
-
-
 fn example() {
     let x = 5;
     let raw = &x as *const i32;

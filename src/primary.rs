@@ -1,5 +1,3 @@
-
-
 fn primary() {
     // Call fn
     stared();
